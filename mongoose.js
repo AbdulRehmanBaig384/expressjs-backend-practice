@@ -14,10 +14,10 @@ const mongoose=require('mongoose');
 // //   const db=await mongoose.connect(url)
 // //  const StudentModel=mongoose.model('Students',stuSchema);
 // // let data= new StudentModel({name:'m8',age:20})
-// // let result=await data.save();
-// // console.log(result)
-// // }
-// // main();
+let result=await data.save();
+console.log(result)
+}
+main();
 
 // const updateinongo=async()=>{
 //   await mongoose.connect(url)
@@ -57,4 +57,5 @@ const testConnection = async () => {
 }
 
 testConnection().catch(err => console.error("Error:", err));
+
 
