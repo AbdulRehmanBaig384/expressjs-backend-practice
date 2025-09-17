@@ -20,8 +20,11 @@ app.get('/', (req, res) => {
     
 });
 
+
 app.post('/generate', (req, res) => {
+
     const redirectURL = req.body.redirectURL;
+    
     res.render('Generate', { redirectURL });
 });
 
@@ -35,4 +38,5 @@ const port = 4200;
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
+
 
