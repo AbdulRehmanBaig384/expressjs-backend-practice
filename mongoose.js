@@ -10,10 +10,10 @@ const mongoose=require('mongoose');
   Aim:String,
 })
 
-// // const main= async() =>{
-// //   const db=await mongoose.connect(url)
-// //  const StudentModel=mongoose.model('Students',stuSchema);
-// // let data= new StudentModel({name:'m8',age:20})
+const main= async() =>{
+  const db=await mongoose.connect(url)
+ const StudentModel=mongoose.model('Students',stuSchema);
+let data= new StudentModel({name:'m8',age:20})
 let result=await data.save();
 console.log(result)
 }
@@ -57,5 +57,6 @@ const testConnection = async () => {
 }
 
 testConnection().catch(err => console.error("Error:", err));
+
 
 
