@@ -28,15 +28,23 @@ app.post('/generate', (req, res) => {
     res.render('Generate', { redirectURL });
 });
 
+
 app.get('/redirect/:url', (req, res) => {
+
     const url = req.params.url;
+    
     const fullURL = 'https://' + url; 
+    
     res.redirect(fullURL);
 });
 
+
 const port = 4200;
+
 app.listen(port, () => {
+
     console.log(`Server running at http://localhost:${port}`);
 });
+
 
 
