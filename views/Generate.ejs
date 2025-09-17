@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Generated</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #ff5e62;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    a:hover {
+      background-color: #ff3c3f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Redirect URL Generated </h1>
+    <p>Here is your redirect link:</p>
+    <a href="/redirect/<%= redirectURL %>">Click Here to Redirect</a>
+  </div>
+</body>
+</html>
