@@ -1,14 +1,14 @@
-// // const { name } = require('ejs');
-// const mongoose=require('mongoose');
+const { name } = require('ejs');
+const mongoose=require('mongoose');
 // const url = 'mongodb://127.0.0.1:27017/studentinfo';
 
 
-//  const stuSchema=new mongoose.Schema({
-//   name:String,
-//   age:Number,
-//   course:String,
-//   Aim:String,
-// })
+ const stuSchema=new mongoose.Schema({
+  name:String,
+  age:Number,
+  course:String,
+  Aim:String,
+})
 
 // // const main= async() =>{
 // //   const db=await mongoose.connect(url)
@@ -57,3 +57,4 @@ const testConnection = async () => {
 }
 
 testConnection().catch(err => console.error("Error:", err));
+
